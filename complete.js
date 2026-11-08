@@ -1,6 +1,8 @@
-const prompt = require(`prompt-sync`)();
-const total = Number(prompt("What's the Total : $"));
-const people = Number(prompt("How many are we ? : "));
-const tip = Number(prompt("How much tip do you want ? : "));
-const Finalbill = (total + (total * tip ) / 100)  / people;
-console.log(`Each has to pay : $ ${Finalbill}`);
+// Prompt the user to enter their full name without spaces.
+// Generate a secure username that begins with the @ symbol.
+// Append their inputted full name directly after the symbol.
+// Append the total character length of their name at the very end.
+// Example: Inputting ShradhaKhapra must output @ShradhaKhapra13.
+const Prompt = require(`prompt-sync`)();
+const name=Prompt("Enter your fullname without spaces : ");
+console.log(`@${name}${name.length}`);
